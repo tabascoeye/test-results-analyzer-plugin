@@ -160,10 +160,6 @@ public class TestResultsAnalyzerAction extends Actionable implements Action {
 		    runs = project.getBuilds();
         }
 		for (Run run : runs) {
-			if(run.isBuilding()) {
-				continue;
-			}
-
 			int buildNumber = run.getNumber();
 			builds.add(buildNumber);
 
